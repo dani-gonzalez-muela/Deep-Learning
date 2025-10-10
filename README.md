@@ -1,33 +1,46 @@
 # Deep Learning Projects
 
-This repository contains a collection of deep learning projects demonstrating applications in computer vision, natural language processing, and structured data modeling. Each project showcases different architectures, techniques, and datasets, highlighting practical implementations and performance evaluation.
+## Overview
+This collection explores deep learning applications, including image classification, generative models, natural language processing, and unsupervised feature mapping. Projects demonstrate convolutional networks, recurrent networks, transformers, self-organizing maps, and diffusion-based text-to-image generation.
 
 ## Projects
 
-### 1. Cats vs Dogs Classification
-- **Description:** Implements a convolutional neural network (CNN) and transfer learning with VGG16 to classify cat and dog images. Includes data augmentation, normalization, and fine-tuning.  
-- **Key Results:** Achieved up to 98% validation accuracy using transfer learning.  
+### 1. Text-to-Image Generation with Diffusion Models
+- **Objective:** Generate images from text prompts using diffusion models.
+- **Models:** Stable Diffusion, UNet, CLIP-based text encoder.
+- **Results:** High-quality image generation; diverse outputs conditioned on text.
 
-### 2. Pokémon Go Classification
-- **Description:** Predicts which Pokémon (Diglett, Seel, Tauros) will appear at a location using latitude and longitude data. Explores neural networks of varying complexity.  
-- **Key Results:** ~73% test accuracy capturing geographic patterns; highlights potential improvements from temporal and environmental features.
+### 2. Cats vs Dogs Classification with CNN & Transfer Learning
+- **Objective:** Classify cats and dogs using convolutional neural networks.
+- **Models:** CNN from scratch; Transfer Learning with VGG16 (frozen & fine-tuned).
+- **Results:** CNN validation accuracy ~80%; VGG16 transfer learning ~98% validation accuracy.
 
-### 3. Name Nationality Classification
-- **Description:** Predicts nationality from a person’s name using custom recurrent neural networks (RNNs). Handles variable-length sequences, class imbalance, and evaluates with F1-score.  
-- **Key Results:** Successfully learns country-character patterns; weighted classes essential to handle imbalance.  
+### 3. Pokémon Go Classification (Location-Based)
+- **Objective:** Predict appearance of three Pokémon species based on latitude and longitude.
+- **Models:** Neural networks of varying complexity.
+- **Results:** Validation/test accuracy ~73%.
 
-### 4. IMDB Movie Sentiment Classification with Transformers
-- **Description:** Uses a transformer-based architecture with self-attention and transfer learning from DistilBERT to classify IMDB movie reviews as positive or negative.  
-- **Key Results:** Efficient training using frozen pretrained layers; contextual embeddings improve downstream task performance.
+### 4. Name-to-Nationality Prediction with RNN
+- **Objective:** Predict nationality from a person’s name character sequence.
+- **Models:** Custom RNN with padding and class weighting.
+- **Results:** Improved F1-score on imbalanced dataset; model learns meaningful character-country patterns.
 
-### 5. XOR Restricted Boltzmann Machine (RBM)
-- **Description:** Trains a Restricted Boltzmann Machine to model 3-bit XOR patterns. Explores hidden layer size effects on Kullback-Leibler divergence and pattern generation.  
-- **Key Results:** Larger hidden layers reduce divergence and better approximate the target data distribution.
+### 5. IMDB Movie Sentiment Classification with Transformers
+- **Objective:** Classify IMDB movie reviews as positive or negative.
+- **Models:** Custom Transformer layers; pre-trained DistilBERT as backbone.
+- **Results:** High downstream task performance using transfer learning; attention visualization interpretable.
+
+### 6. Restricted Boltzmann Machine on XOR Dataset
+- **Objective:** Train RBM to model XOR 3-bit patterns.
+- **Models:** Contrastive Divergence (CD-k) with varying hidden neurons.
+- **Results:** Best Kullback-Leibler divergence with 4 hidden neurons; simulated probabilities approximate target distribution.
 
 ### 7. Neural Networks from Scratch
-- **Description:** Implements feedforward neural networks without using high-level frameworks. Covers forward propagation, backpropagation, gradient descent, and training loops for classification tasks.  
-- **Key Results:** Demonstrates fundamental neural network principles and verifies correctness through toy datasets.
+- **Objective:** Build and train basic feedforward networks manually.
+- **Models:** Fully connected networks with ReLU and Sigmoid activations.
+- **Results:** Achieved reasonable accuracy on small datasets (example: ~70–80%).
 
 ### 8. Self-Organizing Map (SOM)
-- **Description:** Implements a Self-Organizing Map to cluster and visualize high-dimensional data onto a 2D grid. Explores unsupervised learning and topology-preserving mapping.  
-- **Key Results:** Successfully visualizes clusters; shows how SOM captures patterns in high-dimensional input.
+- **Objective:** Unsupervised feature mapping and clustering.
+- **Models:** 2D SOM with neighborhood functions.
+- **Results:** Organized input patterns into topologically meaningful clusters; qualitative visualization used.
