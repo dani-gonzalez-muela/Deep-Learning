@@ -1,4 +1,14 @@
-Self Organising Map/Ignore/
-4. Nationality Prediction From Names Using RNNs/data/
-3. Pokemon Prediction Using NN/Ignore/
-2. Cats & Dogs With CNN And Transfer Learning/Ignore/
+9. Self Organising Map/Ignore/
+5. Nationality Prediction From Names Using RNNs/data/
+4. Pokemon Prediction Using NN/Ignore/
+3. Cats & Dogs With CNN And Transfer Learning/Ignore/
+# 2. NLP Financial Compliance - model weights and datasets (not the app)
+2. NLP Financial Compliance/compliance_model/
+2. NLP Financial Compliance/compliance_dataset.csv
+2. NLP Financial Compliance/compliance_dataset_augmented.csv
+2. NLP Financial Compliance/compliance_dataset_multilabel.csv
+2. NLP Financial Compliance/compliance_app/
+2. NLP Financial Compliance/compliance_app/compliance_model_best/
+*.safetensors
+*.pt
+
